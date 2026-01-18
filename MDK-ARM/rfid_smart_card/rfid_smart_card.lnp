@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"rfid_smart_card\startup_stm32f103xb.o"
+"rfid_smart_card\main.o"
+"rfid_smart_card\gpio.o"
+"rfid_smart_card\spi.o"
+"rfid_smart_card\usart.o"
+"rfid_smart_card\stm32f1xx_it.o"
+"rfid_smart_card\stm32f1xx_hal_msp.o"
+"rfid_smart_card\stm32f1xx_hal_gpio_ex.o"
+"rfid_smart_card\stm32f1xx_hal_spi.o"
+"rfid_smart_card\stm32f1xx_hal.o"
+"rfid_smart_card\stm32f1xx_hal_rcc.o"
+"rfid_smart_card\stm32f1xx_hal_rcc_ex.o"
+"rfid_smart_card\stm32f1xx_hal_gpio.o"
+"rfid_smart_card\stm32f1xx_hal_dma.o"
+"rfid_smart_card\stm32f1xx_hal_cortex.o"
+"rfid_smart_card\stm32f1xx_hal_pwr.o"
+"rfid_smart_card\stm32f1xx_hal_flash.o"
+"rfid_smart_card\stm32f1xx_hal_flash_ex.o"
+"rfid_smart_card\stm32f1xx_hal_exti.o"
+"rfid_smart_card\stm32f1xx_hal_uart.o"
+"rfid_smart_card\system_stm32f1xx.o"
+"rfid_smart_card\oled.o"
+"rfid_smart_card\rc522.o"
+--strict --scatter "rfid_smart_card\rfid_smart_card.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "rfid_smart_card.map" -o rfid_smart_card\rfid_smart_card.axf
